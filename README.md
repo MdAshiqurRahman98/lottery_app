@@ -14,6 +14,8 @@ A simple Flutter lottery application built with Clean Architecture principles.
 - Win/lose results with visual feedback
 - Play again functionality
 
+---
+
 ## Architecture
 
 This app follows **Clean Architecture** with three layers:
@@ -22,11 +24,15 @@ This app follows **Clean Architecture** with three layers:
 - **Data Layer**: Repository implementation
 - **Presentation Layer**: UI screens and state management
 
+---
+
 ## Tech Stack
 
 - **Flutter** - UI framework
 - **Provider** - State management
 - **Dart** - Programming language
+
+---
 
 ## Getting Started
 
@@ -68,6 +74,8 @@ flutter run -d ios
 flutter run -d android
 ```
 
+---
+
 ## Project Structure
 
 ```
@@ -82,6 +90,8 @@ lib/
     ├── provider/        # LotteryProvider (State Management)
     └── screens/         # HomeScreen, EntryScreen, ResultScreen
 ```
+
+---
 
 ## How to Play
 
