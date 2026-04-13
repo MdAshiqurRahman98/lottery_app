@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       create: (context) => LotteryProvider(),
 
       child: MaterialApp(
-        title: 'Mini Lottery',
+        title: 'Lottery App',
 
         debugShowCheckedModeBanner: false,
 
