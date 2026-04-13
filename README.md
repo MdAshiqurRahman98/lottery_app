@@ -1,17 +1,96 @@
-# lottery_app
+# Lottery App 🎰
 
-A new Flutter project.
+A simple Flutter lottery application built with Clean Architecture principles.
+
+<td align="center">
+      <img src="https://github.com/user-attachments/assets/2bdcaa83-62bd-4fbc-84c3-e288ad209147" width="250" />
+</td>
+
+
+## Features
+
+- Enter your name and select a lucky number (1-10)
+- Instant lottery draw with random number generation
+- Win/lose results with visual feedback
+- Play again functionality
+
+## Architecture
+
+This app follows **Clean Architecture** with three layers:
+
+- **Domain Layer**: Business logic and entities
+- **Data Layer**: Repository implementation
+- **Presentation Layer**: UI screens and state management
+
+## Tech Stack
+
+- **Flutter** - UI framework
+- **Provider** - State management
+- **Dart** - Programming language
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK (3.10.8 or higher)
+- Dart SDK
+- IDE (VS Code, Android Studio, or IntelliJ)
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone or download this project
+2. Navigate to project directory:
+   ```bash
+   cd lottery_app
+   ```
+3. Install dependencies:
+   ```bash
+   flutter pub get
+   ```
+4. Run the app:
+   ```bash
+   flutter run
+   ```
+
+### Running on Different Platforms
+
+```bash
+# macOS
+flutter run -d macos
+
+# Chrome (Web)
+flutter run -d chrome
+
+# iOS Simulator
+flutter run -d ios
+
+# Android Emulator
+flutter run -d android
+```
+
+## Project Structure
+
+```
+lib/
+├── domain/              # Business Logic
+│   ├── entities/        # LotteryResult
+│   └── use_cases/       # PlayLotteryUseCase
+├── data/                # Data Layer
+│   └── repositories/    # LotteryRepositoryImpl
+└── presentation/        # UI Layer
+    ├── core/            # Shared UI components
+    ├── provider/        # LotteryProvider (State Management)
+    └── screens/         # HomeScreen, EntryScreen, ResultScreen
+```
+
+## How to Play
+
+1. **Home Screen**: Click "Play Lottery"
+2. **Entry Screen**: 
+   - Optionally enter your name
+   - Select a number (1-10)
+   - Click "Submit"
+3. **Result Screen**: 
+   - View your number vs winning number
+   - See if you won! 🎉
+   - Click "Try Again" to replay
